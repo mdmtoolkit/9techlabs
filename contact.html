@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | 9techlabs</title>
+  <meta name="description" content="Contact 9techlabs about your website, app, AI assistant, social media or data project.">
+  <link rel="canonical" href="https://9techlabs.com/contact.html">
+  <meta property="og:title" content="Contact us | 9techlabs">
+  <meta property="og:description" content="Contact 9techlabs about your website, app, AI assistant, social media or data project.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://9techlabs.com/contact.html">
+  <meta name="theme-color" content="#2143E0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="9techlabs home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="brand-grad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2143E0"/><stop offset="1" stop-color="#9B4DFF"/></linearGradient></defs><path d="M8 24V8H40V24H8M40 24V40H8" fill="none" stroke="url(#brand-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="url(#brand-grad)"><circle cx="8" cy="8" r="5"/><circle cx="24" cy="8" r="5"/><circle cx="8" cy="24" r="5"/><circle cx="24" cy="24" r="5"/><circle cx="40" cy="24" r="5"/><circle cx="8" cy="40" r="5"/><circle cx="24" cy="40" r="5"/><circle cx="40" cy="40" r="5"/></g><circle cx="40" cy="8" r="5.5" fill="#FFB020"/></svg>
+        <span><span class="nine">9</span>techlabs</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html" aria-current="page">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-intro">
+      <div class="wrap">
+        <span class="kicker">Contact us</span>
+        <h1>Tell us what you need</h1>
+        <p class="lede">A few lines are enough. You do not need a full brief; a rough idea is a fine place to begin.</p>
+      </div>
+    </div>
+
+    <div class="wrap contact-layout">
+      <form class="form" id="contact-form" novalidate>
+        <div class="error-summary" id="error-summary" tabindex="-1" role="alert" hidden>
+          <h2>Check these fields before sending</h2>
+          <ul></ul>
+        </div>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="company">Company <span class="optional">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+
+        <div class="field">
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service">
+            <option>Not sure yet</option>
+            <option data-key="websites">Website design</option>
+            <option data-key="apps">App development</option>
+            <option data-key="ai">AI assistants and chatbots</option>
+            <option data-key="social">Social media marketing</option>
+            <option data-key="data">Data services</option>
+            <option>More than one of these</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Your message</label>
+          <span class="hint" id="message-hint">What are you trying to achieve, and is there a date you are working towards?</span>
+          <textarea id="message" name="message" required aria-describedby="message-hint message-error"></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="website-field">Leave this field empty</label>
+          <input id="website-field" name="_honey" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div>
+          <button class="btn btn-primary" type="submit" id="submit-button">Submit</button>
+        </div>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+
+      <aside class="aside-card" aria-labelledby="direct-heading">
+        <h2 id="direct-heading">Prefer to write directly?</h2>
+        <p><a class="email-link" href="mailto:hello@9techlabs.com">hello@9techlabs.com</a></p>
+        <h3>What happens next</h3>
+        <ol>
+          <li>We read your message and reply with any questions.</li>
+          <li>We arrange a short call to understand what you need.</li>
+          <li>You receive a written scope, timeline and price.</li>
+        </ol>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="9techlabs home">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24V8H40V24H8M40 24V40H8" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="#fff"><circle cx="8" cy="8" r="5"/><circle cx="24" cy="8" r="5"/><circle cx="8" cy="24" r="5"/><circle cx="24" cy="24" r="5"/><circle cx="40" cy="24" r="5"/><circle cx="8" cy="40" r="5"/><circle cx="24" cy="40" r="5"/><circle cx="40" cy="40" r="5"/></g><circle cx="40" cy="8" r="5.5" fill="#FFB020"/></svg>
+            <span>9techlabs</span>
+          </a>
+          <p>Websites, apps, AI assistants, social media marketing and data services from one team.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="case-studies.html">Case studies</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Services">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="services.html#websites">Website design</a></li>
+            <li><a href="services.html#apps">App development</a></li>
+            <li><a href="services.html#ai">AI assistants and chatbots</a></li>
+            <li><a href="services.html#social">Social media marketing</a></li>
+            <li><a href="services.html#data">Data services</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:hello@9techlabs.com">hello@9techlabs.com</a></li>
+            <li><a href="contact.html">Send a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-base">&copy; <span id="year">2026</span> 9techlabs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/chat.js" defer></script>
+</body>
+</html>
